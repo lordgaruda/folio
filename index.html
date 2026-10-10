@@ -1,501 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Falgun Vaghashiya - Freelance DevOps Engineer & AWS Cloud Infrastructure Specialist. Implementing efficient, automated, and secure cloud deployment solutions.">
-    <meta name="keywords" content="DevOps Engineer, Freelance DevOps, AWS Specialist, Cloud Infrastructure, Jenkins, Prometheus, Nginx, Linux Administrator, Web Server Hardening, CI/CD Automation">
-    <meta name="author" content="Falgun Vaghashiya">
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://github.com/lordgaruda">
-    <meta property="og:title" content="Falgun Vaghashiya | DevOps Engineer & AWS Cloud Specialist">
-    <meta property="og:description" content="DevOps Specialist providing high-performance AWS cloud setups, automated CI/CD pipelines, and secure Linux server environments.">
-    <meta property="og:image" content="https://raw.githubusercontent.com/lordgaruda/lordgaruda/main/og-image.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:title" content="Falgun Vaghashiya | DevOps Engineer & AWS Cloud Specialist">
-    <meta property="twitter:description" content="DevOps Specialist providing high-performance AWS cloud setups, automated CI/CD pipelines, and secure Linux server environments.">
-
-    <title>Falgun Vaghashiya | DevOps Engineer & AWS Cloud Specialist</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Lucide Icons CDN (UMD Build) -->
-    <script src="https://cdn.jsdelivr.net/npm/lucide/dist/umd/lucide.js"></script>
-
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#112c28">
+  <meta name="description" content="Falgun Vaghashiya — DevOps Engineer working with AWS, CI/CD automation, Linux infrastructure, and observability. Explore my work and get in touch.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Falgun Vaghashiya | DevOps Engineer">
+  <meta property="og:description" content="Reliable infrastructure. Confident releases. DevOps, cloud engineering, and automation by Falgun Vaghashiya.">
+  <title>Falgun Vaghashiya — DevOps & Cloud Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
-
-    <!-- Sticky Navigation -->
-    <header class="header">
-        <div class="nav-container">
-            <a href="#hero" class="logo">
-                <span class="logo-accent">&gt;_ </span>FALGUN.V
-            </a>
-            
-            <nav class="nav-menu" id="nav-menu">
-                <a href="#about" class="nav-link">About</a>
-                <a href="#skills" class="nav-link">Skills</a>
-                <a href="#experience" class="nav-link">Experience</a>
-                <a href="#services" class="nav-link">Services</a>
-                <a href="#projects" class="nav-link">Projects</a>
-                <a href="#contact" class="nav-link nav-cta">Get In Touch</a>
-            </nav>
-
-            <button class="mobile-toggle" id="mobile-toggle" aria-label="Toggle menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="external" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+    <symbol id="cloud" viewBox="0 0 24 24"><path d="M6 19a5 5 0 0 1-1-9.9 7 7 0 0 1 13.5-1.6A6 6 0 0 1 18 19Z"/></symbol>
+    <symbol id="branch" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M6 7v10m0-5h6a6 6 0 0 0 6-5"/></symbol>
+    <symbol id="server" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M12 6.5h5m-5 11h5"/></symbol>
+    <symbol id="activity" viewBox="0 0 24 24"><path d="M2 12h5l3-8 4 16 3-8h5"/></symbol>
+    <symbol id="shield" viewBox="0 0 24 24"><path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6Z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></symbol>
+    <symbol id="code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-14-2 18"/></symbol>
+    <symbol id="check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="pin" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2"/></symbol>
+  </defs></svg>
+  <header class="header">
+    <div class="container navigation">
+      <a class="brand" href="#hero" aria-label="Falgun Vaghashiya home"><span class="brand-mark">f<span>.</span></span><span>falgun<span class="brand-light"> / devops</span></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-controls="nav-menu" aria-expanded="false"><span></span><span></span></button>
+      <nav id="nav-menu" aria-label="Main navigation">
+        <a class="nav-link" href="#projects">Work</a><a class="nav-link" href="#skills">Expertise</a><a class="nav-link" href="#about">About</a><a class="nav-link" href="#experience">Experience</a>
+        <a class="nav-contact" href="#contact">Let’s talk <svg class="icon"><use href="#external"/></svg></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section id="hero" class="hero container">
+      <div class="hero-copy">
+        <div class="availability"><span class="status-dot"></span> Open to DevOps opportunities & freelance work</div>
+        <p class="eyebrow intro">HI, I’M FALGUN VAGHASHIYA</p>
+        <h1>Good code deserves<br><span>great infrastructure.</span></h1>
+        <p class="hero-description">I’m a DevOps Engineer building reliable cloud environments, automating deployments, and making production a little more predictable.</p>
+        <div class="hero-actions"><a class="button primary" href="#projects">Explore my work <svg class="icon"><use href="#arrow"/></svg></a><a class="text-link" href="https://github.com/lordgaruda" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon"><use href="#external"/></svg></a></div>
+        <div class="hero-location"><svg class="icon"><use href="#pin"/></svg> Based in Ahmedabad, India <span>·</span> Building for the cloud</div>
+      </div>
+      <div class="infrastructure" aria-label="Illustrative workflow from source code through a CI/CD pipeline to cloud deployment and monitoring">
+        <div class="infra-top"><span><span class="status-dot"></span> THE DELIVERY WORKFLOW</span><span class="infra-label">ILLUSTRATION / 01</span></div>
+        <div class="infra-canvas">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="diagram-node source-node"><span class="node-icon"><svg class="icon"><use href="#code"/></svg></span><div><strong>Source code</strong><small>Git / GitHub</small></div><span class="node-state">01</span></div>
+          <div class="connection connection-one"><span>COMMIT → BUILD</span></div>
+          <div class="diagram-node pipeline-node"><span class="node-icon"><svg class="icon"><use href="#branch"/></svg></span><div><strong>CI/CD pipeline</strong><small>Build. Test. Deploy.</small></div><span class="node-state">02</span></div>
+          <div class="connection connection-two"><span>SHIP WITH CONFIDENCE</span></div>
+          <div class="diagram-node cloud-node"><span class="node-icon"><svg class="icon"><use href="#cloud"/></svg></span><div><strong>Cloud infrastructure</strong><small>AWS / Linux / Nginx</small></div><span class="node-state">03</span></div>
+          <div class="monitor-node"><svg class="icon"><use href="#activity"/></svg><span>Observe & improve</span><span class="monitor-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
         </div>
-    </header>
-
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section">
-            <div class="grid-container hero-grid">
-                <div class="hero-content">
-                    <div class="status-badge">
-                        <span class="status-dot"></span>
-                        <span class="status-text font-mono">SYSTEM: ACTIVE // OPEN FOR FREELANCE</span>
-                    </div>
-                    <h1 class="hero-name">Falgun Vaghashiya</h1>
-                    <h2 class="hero-title">DevOps Engineer <span class="divider">|</span> AWS & Cloud Infrastructure Specialist</h2>
-                    <p class="hero-tagline">Implementing efficient, automated, and highly scalable cloud infrastructure solutions. Bridging code development with rock-solid production reliability.</p>
-                    
-                    <div class="hero-ctas">
-                        <a href="#projects" class="btn btn-primary">
-                            <i data-lucide="terminal" class="btn-icon"></i> View Work
-                        </a>
-                        <a href="#contact" class="btn btn-secondary">
-                            <i data-lucide="mail" class="btn-icon"></i> Get in Touch
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Interactive Terminal Mockup -->
-                <div class="hero-terminal" id="terminal-window">
-                    <div class="terminal-header">
-                        <div class="terminal-dots">
-                            <span class="dot close"></span>
-                            <span class="dot minimize"></span>
-                            <span class="dot expand"></span>
-                        </div>
-                        <span class="terminal-title font-mono">falgun@devops:~</span>
-                    </div>
-                    <div class="terminal-body font-mono" id="terminal-content">
-                        <div class="terminal-line"><span class="prompt">falgun@devops:~$</span> <span class="typed-command">npx deploy-stack --env prod</span></div>
-                        <!-- JavaScript will dynamically type out commands/responses here -->
-                    </div>
-                </div>
-            </div>
-            
-            <a href="#about" class="scroll-down-arrow" aria-label="Scroll Down">
-                <i data-lucide="chevron-down"></i>
-            </a>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" class="about-section scroll-reveal">
-            <div class="container">
-                <h2 class="section-title"><span class="title-accent">//</span> 01. About Me</h2>
-                <div class="grid-container about-grid">
-                    <div class="about-text">
-                        <p class="lead-text">
-                            I am a results-driven DevOps Engineer focused on automating software delivery and building resilient cloud infrastructure. Currently, I work at <strong>Webs Optimization Software Solution</strong> in Ahmedabad, where I manage production deployments, optimize infrastructure performance, and orchestrate cloud resources.
-                        </p>
-                        <p>
-                            Parallel to my professional work, I am pursuing my Bachelor's degree in Information Technology at <strong>Ganpat University (2021–2025)</strong>. This unique combination allows me to continuously bridge theoretical computer science principles with hands-on, real-world DevOps practices.
-                        </p>
-                        <p>
-                            My mission is simple: to help businesses build automated, scalable, and secure deployment systems so developers can release software with confidence, and businesses can scale without downtime.
-                        </p>
-                    </div>
-                    <div class="about-stats-container">
-                        <div class="stat-card">
-                            <div class="stat-icon-wrapper">
-                                <i data-lucide="cloud"></i>
-                            </div>
-                            <h3 class="stat-title font-mono">AWS & GCP</h3>
-                            <p class="stat-desc">Production Cloud Management</p>
-                        </div>
-                        <div class="stat-card">
-                            <div class="stat-icon-wrapper">
-                                <i data-lucide="git-branch"></i>
-                            </div>
-                            <h3 class="stat-title font-mono">CI/CD Pipeline</h3>
-                            <p class="stat-desc">Jenkins Automated Deployments</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills-section scroll-reveal">
-            <div class="container">
-                <h2 class="section-title"><span class="title-accent">//</span> 02. Technical Arsenal</h2>
-                <p class="section-subtitle">Categorized technologies and tools I utilize to deploy, automate, and secure infrastructures.</p>
-                
-                <div class="grid-container skills-grid">
-                    <!-- Cloud Platforms -->
-                    <div class="skill-category-card">
-                        <div class="category-header">
-                            <i data-lucide="cloud" class="category-icon"></i>
-                            <h3 class="category-title">Cloud Platforms</h3>
-                        </div>
-                        <ul class="skill-list font-mono">
-                            <li><span class="skill-indicator"></span> AWS (Amazon Web Services)</li>
-                            <li><span class="skill-indicator"></span> Google Cloud Platform (GCP)</li>
-                        </ul>
-                    </div>
-
-                    <!-- CI/CD & Automation -->
-                    <div class="skill-category-card">
-                        <div class="category-header">
-                            <i data-lucide="refresh-cw" class="category-icon"></i>
-                            <h3 class="category-title">CI/CD & Automation</h3>
-                        </div>
-                        <ul class="skill-list font-mono">
-                            <li><span class="skill-indicator"></span> Jenkins Pipelines</li>
-                            <li><span class="skill-indicator"></span> Build Automation</li>
-                            <li><span class="skill-indicator"></span> Git / GitHub Actions</li>
-                        </ul>
-                    </div>
-
-                    <!-- Monitoring & Observability -->
-                    <div class="skill-category-card">
-                        <div class="category-header">
-                            <i data-lucide="activity" class="category-icon"></i>
-                            <h3 class="category-title">Monitoring & Performance</h3>
-                        </div>
-                        <ul class="skill-list font-mono">
-                            <li><span class="skill-indicator"></span> Prometheus Monitoring</li>
-                            <li><span class="skill-indicator"></span> Application Performance Mgmt</li>
-                            <li><span class="skill-indicator"></span> Metrics & Alerting Engines</li>
-                        </ul>
-                    </div>
-
-                    <!-- Web Servers & Infrastructure -->
-                    <div class="skill-category-card">
-                        <div class="category-header">
-                            <i data-lucide="server" class="category-icon"></i>
-                            <h3 class="category-title">Infrastructure & Servers</h3>
-                        </div>
-                        <ul class="skill-list font-mono">
-                            <li><span class="skill-indicator"></span> Nginx Configuration</li>
-                            <li><span class="skill-indicator"></span> Linux Server Administration</li>
-                            <li><span class="skill-indicator"></span> Bash Scripting</li>
-                        </ul>
-                    </div>
-
-                    <!-- Security -->
-                    <div class="skill-category-card">
-                        <div class="category-header">
-                            <i data-lucide="shield-check" class="category-icon"></i>
-                            <h3 class="category-title">Security & Compliance</h3>
-                        </div>
-                        <ul class="skill-list font-mono">
-                            <li><span class="skill-indicator"></span> Linux Server Hardening</li>
-                            <li><span class="skill-indicator"></span> SSL/TLS Protocols</li>
-                            <li><span class="skill-indicator"></span> IAM Policies & Security Groups</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="experience-section scroll-reveal">
-            <div class="container">
-                <h2 class="section-title"><span class="title-accent">//</span> 03. Professional History</h2>
-                
-                <div class="timeline-container">
-                    <!-- Current Role -->
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date font-mono">JAN 2025 - PRESENT</div>
-                        <div class="timeline-content-card">
-                            <div class="timeline-card-header">
-                                <h3 class="role-title">DevOps Engineer</h3>
-                                <span class="company-name font-mono">
-                                    <a href="https://websoffers.com" target="_blank" rel="noopener noreferrer">Webs Optimization Software Solution</a>
-                                </span>
-                            </div>
-                            <span class="job-location"><i data-lucide="map-pin"></i> Ahmedabad, India (On-site / Hybrid)</span>
-                            <ul class="job-duties">
-                                <li>Integrated diverse AWS services to streamline production application deployment processes, achieving highly available architecture.</li>
-                                <li>Designed and automated core build and deployment workflows using Jenkins, significantly reducing deployment cycles and manual steps.</li>
-                                <li>Managed configurations, security patches, and deployment profiles across Linux servers, AWS EC2, and Google Cloud (GCP) environments.</li>
-                                <li>Enforced server-hardening protocols, IAM restrictions, and SSL configurations to maintain high levels of infrastructure compliance and security.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="services-section scroll-reveal">
-            <div class="container">
-                <h2 class="section-title"><span class="title-accent">//</span> 04. Freelance Offerings</h2>
-                <p class="section-subtitle">Tailored, reliable solutions to stabilize, scale, and optimize your cloud environments.</p>
-                
-                <div class="grid-container services-grid">
-                    <!-- Service 1 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i data-lucide="cloud"></i></div>
-                        <h3 class="service-title">AWS Cloud Setup &amp; Migration</h3>
-                        <p class="service-desc">Provisioning robust cloud foundations. Designing custom VPC architectures, security groups, RDS databases, and computing environments tailored for your operational loads.</p>
-                        <span class="service-tag font-mono">AWS / Terraform / GCP</span>
-                    </div>
-
-                    <!-- Service 2 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i data-lucide="git-pull-request"></i></div>
-                        <h3 class="service-title">CI/CD Pipeline Implementation</h3>
-                        <p class="service-desc">Eliminating manual deployment errors. Designing end-to-end continuous integration and deployment systems with Jenkins or GitHub Actions to deploy code safely and rapidly.</p>
-                        <span class="service-tag font-mono">Jenkins / Docker / Git</span>
-                    </div>
-
-                    <!-- Service 3 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i data-lucide="lock"></i></div>
-                        <h3 class="service-title">Server Hardening &amp; Security</h3>
-                        <p class="service-desc">Protecting infrastructure against external threats. Reviewing access models, locking down SSH configurations, deploying firewall policies, and conducting vulnerability audits.</p>
-                        <span class="service-tag font-mono">Linux / IAM / Firewalls</span>
-                    </div>
-
-                    <!-- Service 4 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i data-lucide="line-chart"></i></div>
-                        <h3 class="service-title">Monitoring &amp; Observability Setup</h3>
-                        <p class="service-desc">Configuring Prometheus, Grafana, and Nginx configurations for granular metric visibility. Implementing critical alert routes to catch anomalies before your users do.</p>
-                        <span class="service-tag font-mono">Prometheus / Nginx / Grafana</span>
-                    </div>
-
-                    <!-- Service 5 -->
-                    <div class="service-card">
-                        <div class="service-icon"><i data-lucide="cpu"></i></div>
-                        <h3 class="service-title">Troubleshooting &amp; Optimization</h3>
-                        <p class="service-desc">Diagnosing performance bottlenecks, database latency, and deployment pipeline failures. Refactoring servers and cloud resources to maximize efficiency and reduce costs.</p>
-                        <span class="service-tag font-mono">Nginx / OS Tuning / AWS Costs</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects/Case Studies Section -->
-        <section id="projects" class="projects-section scroll-reveal">
-            <div class="container">
-                <h2 class="section-title"><span class="title-accent">//</span> 05. Case Studies</h2>
-                <p class="section-subtitle">Real-world problems solved with clean infrastructure and deployment engineering.</p>
-                
-                <div class="grid-container projects-grid">
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                        <div class="project-meta font-mono">[ CASE STUDY 01 ]</div>
-                        <h3 class="project-title">High-Availability AWS Cloud Migration</h3>
-                        <div class="project-details">
-                            <div class="project-point">
-                                <span class="point-label font-mono">PROBLEM:</span>
-                                <span class="point-val">A legacy SaaS application suffered frequent downtime during traffic spikes due to non-scalable hosting architecture.</span>
-                            </div>
-                            <div class="project-point">
-                                <span class="point-label font-mono">SOLUTION:</span>
-                                <span class="point-val">Redesigned and migrated the stack to AWS using Auto-Scaling ECS Containers, multi-AZ RDS, and configured CloudFront CDN.</span>
-                            </div>
-                            <div class="project-metrics">
-                                <div class="metric">
-                                    <span class="metric-num font-mono">99.99%</span>
-                                    <span class="metric-label">Uptime Achieved</span>
-                                </div>
-                                <div class="metric">
-                                    <span class="metric-num font-mono">-40%</span>
-                                    <span class="metric-label">Server Costs</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                        <div class="project-meta font-mono">[ CASE STUDY 02 ]</div>
-                        <h3 class="project-title">Automated Jenkins CI/CD Redesign</h3>
-                        <div class="project-details">
-                            <div class="project-point">
-                                <span class="point-label font-mono">PROBLEM:</span>
-                                <span class="point-val">Deployment cycles were slow, manual, error-prone, and required developer intervention, resulting in release delays.</span>
-                            </div>
-                            <div class="project-point">
-                                <span class="point-label font-mono">SOLUTION:</span>
-                                <span class="point-val">Designed a declarative Jenkins pipeline integrated with Docker build caching, automated testing hooks, and blue-green deploy logic.</span>
-                            </div>
-                            <div class="project-metrics">
-                                <div class="metric">
-                                    <span class="metric-num font-mono">&lt; 5m</span>
-                                    <span class="metric-label">Deploy Duration</span>
-                                </div>
-                                <div class="metric">
-                                    <span class="metric-num font-mono">100%</span>
-                                    <span class="metric-label">Automated Rollbacks</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Project 3 -->
-                    <div class="project-card">
-                        <div class="project-meta font-mono">[ CASE STUDY 03 ]</div>
-                        <h3 class="project-title">Infrastructure Monitoring & Observability</h3>
-                        <div class="project-details">
-                            <div class="project-point">
-                                <span class="point-label font-mono">PROBLEM:</span>
-                                <span class="point-val">Lack of centralized server and database monitoring led to silent performance degradation and late detection of out-of-memory crashes.</span>
-                            </div>
-                            <div class="project-point">
-                                <span class="point-label font-mono">SOLUTION:</span>
-                                <span class="point-val">Deployed Prometheus metrics exporters on Linux nodes/Nginx, created custom dashboards in Grafana, and configured Slack/PagerDuty alerts.</span>
-                            </div>
-                            <div class="project-metrics">
-                                <div class="metric">
-                                    <span class="metric-num font-mono">-90%</span>
-                                    <span class="metric-label">Incident MTTR</span>
-                                </div>
-                                <div class="metric">
-                                    <span class="metric-num font-mono">24/7</span>
-                                    <span class="metric-label">Real-Time Insight</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="education-section scroll-reveal">
-            <div class="container">
-                <h2 class="section-title"><span class="title-accent">//</span> 06. Education</h2>
-                <div class="education-card">
-                    <div class="education-header">
-                        <div>
-                            <h3 class="degree-title">Bachelor of Technology (B.Tech) in Information Technology</h3>
-                            <span class="university-name font-mono">Ganpat University</span>
-                        </div>
-                        <span class="edu-duration font-mono">2021 — 2025</span>
-                    </div>
-                    <p class="edu-details">
-                        Specializing in systems architecture, networking, cloud systems, and database administration. Core studies focused on practical implementation of cloud infrastructures and DevOps pipelines.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact-section scroll-reveal">
-            <div class="container">
-                <h2 class="section-title"><span class="title-accent">//</span> 07. Establish Contact</h2>
-                <p class="section-subtitle">Let's discuss how we can stabilize your architecture, automate your deployments, and secure your systems.</p>
-                
-                <div class="grid-container contact-grid">
-                    <!-- Contact Info -->
-                    <div class="contact-info">
-                        <h3 class="contact-info-title font-mono">&gt;_ DIRECT_CHANNELS</h3>
-                        <p class="contact-info-text">Feel free to reach out for contract work, consulting, or general questions regarding cloud deployments.</p>
-                        
-                        <div class="info-list">
-                            <a href="mailto:falgunpatel.fv@proton.me" class="info-item">
-                                <div class="info-icon"><i data-lucide="mail"></i></div>
-                                <div>
-                                    <span class="info-label font-mono">EMAIL</span>
-                                    <span class="info-value">falgunpatel.fv@proton.me</span>
-                                </div>
-                            </a>
-                            <a href="https://www.linkedin.com/in/falgunv/" target="_blank" rel="noopener noreferrer" class="info-item">
-                                <div class="info-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-                                </div>
-                                <div>
-                                    <span class="info-label font-mono">LINKEDIN</span>
-                                    <span class="info-value">linkedin.com/in/falgunv</span>
-                                </div>
-                            </a>
-                            <a href="https://github.com/lordgaruda" target="_blank" rel="noopener noreferrer" class="info-item">
-                                <div class="info-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-svg"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-                                </div>
-                                <div>
-                                    <span class="info-label font-mono">GITHUB</span>
-                                    <span class="info-value">github.com/lordgaruda</span>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Contact Form -->
-                    <div class="contact-form-container">
-                        <form id="contact-form" class="contact-form">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="name" class="font-mono">Name</label>
-                                    <input type="text" id="name" name="name" required placeholder="John Doe">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email" class="font-mono">Email Address</label>
-                                    <input type="email" id="email" name="email" required placeholder="john@example.com">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="subject" class="font-mono">Subject</label>
-                                <input type="text" id="subject" name="subject" required placeholder="Cloud Migration Project">
-                            </div>
-                            <div class="form-group">
-                                <label for="message" class="font-mono">Message</label>
-                                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your infrastructure challenges..."></textarea>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary btn-submit" id="submit-btn">
-                                <i data-lucide="send" class="btn-icon"></i> Send Message
-                            </button>
-                            <div class="form-status" id="form-status"></div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-content font-mono">
-            <div class="footer-status">
-                <span class="status-dot green"></span>
-                <span>ALL INFRASTRUCTURE SYSTEMS OPERATIONAL // 200 OK</span>
-            </div>
-            <div class="footer-socials">
-                <a href="https://www.linkedin.com/in/falgunv/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-svg"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
-                </a>
-                <a href="https://github.com/lordgaruda" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide-svg"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
-                </a>
-            </div>
-            <div class="footer-copyright">
-                &copy; 2026 Falgun Vaghashiya. Built for reliability and performance.
-            </div>
-        </div>
-    </footer>
-
-    <!-- App JavaScript -->
-    <script src="app.js"></script>
+        <div class="infra-bottom"><span><span class="terminal-prompt">$</span> automate the repetitive. engineer the reliable.</span><span class="terminal-cursor"></span></div>
+      </div>
+    </section>
+    <div class="stack-strip"><div class="container stack-inner"><span class="eyebrow">MY EVERYDAY TOOLKIT</span><div><span>aws<span class="aws-smile">⌣</span></span><span>Jenkins</span><span>Docker</span><span>Linux</span><span>Prometheus</span><span>Nginx</span><span>GitHub Actions</span></div></div></div>
+    <section id="projects" class="section container">
+      <div class="section-heading"><div><p class="eyebrow"><span>01 /</span> SELECTED WORK</p><h2>From challenge<br>to working infrastructure.</h2></div><p>A look at the systems I work on, and the engineering decisions behind them.</p></div>
+      <div class="project-list">
+        <article class="project-card featured">
+          <div class="project-visual cloud-visual" aria-hidden="true"><span class="visual-label">ARCHITECTURE / CLOUD</span><div class="mini-cloud"><svg class="icon"><use href="#cloud"/></svg><span>AWS CLOUD</span></div><div class="mini-fork"></div><div class="mini-nodes"><span><svg class="icon"><use href="#server"/></svg> COMPUTE</span><span><svg class="icon"><use href="#server"/></svg> DATABASE</span></div><div class="visual-bottom"><span class="status-dot"></span> DESIGNED FOR RESILIENCE</div></div>
+          <div class="project-copy"><div class="project-topline"><span class="eyebrow">CLOUD ENGINEERING</span><span class="project-number">01</span></div><h3>High-availability<br>AWS cloud migration</h3><p>Moving beyond the limits of legacy hosting with a scalable architecture built around containerized workloads and managed cloud services.</p><div class="tags"><span>AWS ECS</span><span>RDS</span><span>CloudFront</span></div><details><summary>Explore the approach <span>+</span></summary><div class="project-detail"><h4>The challenge</h4><p>A legacy SaaS application experienced downtime during traffic spikes on its existing hosting setup.</p><h4>The approach</h4><p>Migrate the application to auto-scaling ECS containers, use multi-AZ RDS for the database, and introduce CloudFront for content delivery.</p><h4>Engineering focus</h4><p>Resilient architecture, capacity scaling, and efficient resource use.</p></div></details></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual pipeline-visual" aria-hidden="true"><span class="visual-label">AUTOMATION / DELIVERY</span><div class="pipeline-command"><span>$</span> git push origin main</div><div class="pipeline-stages"><span><svg class="icon"><use href="#check"/></svg> Build</span><i></i><span><svg class="icon"><use href="#check"/></svg> Test</span><i></i><span><svg class="icon"><use href="#check"/></svg> Deploy</span></div><div class="code-lines"><span>pipeline {</span><span>&nbsp; agent any</span><span>&nbsp; stages { <em>/* ship reliably */</em> }</span><span>}</span></div><div class="visual-bottom">LESS REPETITION. MORE CONFIDENCE.</div></div>
+          <div class="project-copy"><div class="project-topline"><span class="eyebrow">CI/CD AUTOMATION</span><span class="project-number">02</span></div><h3>A better path<br>from commit to production</h3><p>Replacing manual release steps with a repeatable Jenkins pipeline, container builds, and a considered deployment strategy.</p><div class="tags"><span>Jenkins</span><span>Docker</span><span>Git</span></div><details><summary>Explore the approach <span>+</span></summary><div class="project-detail"><h4>The challenge</h4><p>Manual deployment workflows required developer intervention and introduced opportunities for release errors.</p><h4>The approach</h4><p>Use a declarative Jenkins pipeline with Docker build caching, automated testing hooks, and blue-green deployment logic.</p><h4>Engineering focus</h4><p>Repeatable builds, fewer manual steps, and a clear rollback path.</p></div></details></div>
+        </article>
+        <article class="project-card">
+          <div class="project-visual monitoring-visual" aria-hidden="true"><span class="visual-label">OBSERVABILITY / OPERATIONS</span><div class="chart-heading"><svg class="icon"><use href="#activity"/></svg><span>Make the invisible visible.</span></div><svg class="monitor-chart" viewBox="0 0 400 110"><path class="chart-grid" d="M0 25h400M0 55h400M0 85h400"/><path class="chart-area" d="M0 85 25 75 50 79 75 48 100 58 125 38 150 55 175 48 200 65 225 30 250 40 275 15 300 30 325 20 350 35 375 15 400 24V110H0Z"/><path class="chart-line" d="M0 85 25 75 50 79 75 48 100 58 125 38 150 55 175 48 200 65 225 30 250 40 275 15 300 30 325 20 350 35 375 15 400 24"/></svg><div class="visual-bottom">METRICS → VISIBILITY → ACTION</div></div>
+          <div class="project-copy"><div class="project-topline"><span class="eyebrow">MONITORING & RELIABILITY</span><span class="project-number">03</span></div><h3>Infrastructure you<br>can actually see</h3><p>Connecting server metrics, dashboards, and alerting so teams can understand system health and investigate issues earlier.</p><div class="tags"><span>Prometheus</span><span>Grafana</span><span>Linux</span></div><details><summary>Explore the approach <span>+</span></summary><div class="project-detail"><h4>The challenge</h4><p>Limited centralized monitoring made it difficult to detect performance degradation and memory issues.</p><h4>The approach</h4><p>Deploy Prometheus exporters for Linux and Nginx, create Grafana dashboards, and configure incident alert routes.</p><h4>Engineering focus</h4><p>Useful metrics, actionable alerts, and faster investigation.</p></div></details></div>
+        </article>
+      </div>
+      <a class="text-link more-work" href="https://github.com/lordgaruda" target="_blank" rel="noopener noreferrer">Explore more on GitHub <svg class="icon"><use href="#external"/></svg></a>
+    </section>
+    <section id="skills" class="expertise-section section"><div class="container">
+      <div class="section-heading"><div><p class="eyebrow"><span>02 /</span> TECHNICAL EXPERTISE</p><h2>The right tools.<br>A systems mindset.</h2></div><p>Connecting the dots between cloud infrastructure, software delivery, and day-to-day operations.</p></div>
+      <div class="expertise-grid">
+        <article class="expertise-card"><svg class="icon"><use href="#cloud"/></svg><span class="expertise-index">01</span><h3>Cloud & infrastructure</h3><p>Cloud environments built with availability, access control, and maintainability in mind.</p><div class="skill-tags"><span>AWS</span><span>GCP</span><span>EC2</span><span>IAM</span><span>VPC</span></div></article>
+        <article class="expertise-card"><svg class="icon"><use href="#branch"/></svg><span class="expertise-index">02</span><h3>Delivery & automation</h3><p>Consistent workflows that take repetitive work out of building and releasing software.</p><div class="skill-tags"><span>Jenkins</span><span>GitHub Actions</span><span>Docker</span><span>Bash</span><span>Git</span></div></article>
+        <article class="expertise-card"><svg class="icon"><use href="#activity"/></svg><span class="expertise-index">03</span><h3>Observability & performance</h3><p>Practical visibility into system behavior, with metrics and alerts that help teams take action.</p><div class="skill-tags"><span>Prometheus</span><span>Grafana</span><span>Metrics</span><span>Alerting</span></div></article>
+        <article class="expertise-card"><svg class="icon"><use href="#shield"/></svg><span class="expertise-index">04</span><h3>Servers & security</h3><p>Well-configured Linux environments with secure access and dependable web delivery.</p><div class="skill-tags"><span>Linux</span><span>Nginx</span><span>SSL/TLS</span><span>SSH</span><span>Hardening</span></div></article>
+      </div>
+    </div></section>
+    <section id="about" class="section container about-section">
+      <div class="about-intro"><p class="eyebrow"><span>03 /</span> THE ENGINEER BEHIND THE SYSTEMS</p><h2>I like solving the problems<br>behind the scenes.</h2><div class="about-body"><p>I’m Falgun, a DevOps Engineer at <strong>Webs Optimization Software Solution</strong> in Ahmedabad. My work sits where development meets production: cloud resources, deployment pipelines, and the Linux systems that keep applications running.</p><p>I care about making infrastructure easier to operate. That means automating repetitive tasks, keeping configurations secure, and giving teams the visibility they need to release with confidence.</p></div><a class="text-link" href="https://www.linkedin.com/in/falgunv/" target="_blank" rel="noopener noreferrer">More about me on LinkedIn <svg class="icon"><use href="#external"/></svg></a></div>
+      <aside class="principles"><span class="eyebrow">HOW I APPROACH MY WORK</span><div><span>01</span><p><strong>Automate with purpose.</strong>Make recurring work repeatable.</p></div><div><span>02</span><p><strong>Build for the real world.</strong>Consider failure, recovery, and scale.</p></div><div><span>03</span><p><strong>Keep things observable.</strong>Understand a system before improving it.</p></div><div class="principles-footer"><svg class="icon"><use href="#code"/></svg> Always learning. Always iterating.</div></aside>
+    </section>
+    <section id="experience" class="section container experience-section"><div class="section-heading"><div><p class="eyebrow"><span>04 /</span> MY JOURNEY</p><h2>Hands-on experience.<br>Solid foundations.</h2></div></div>
+      <div class="journey-row"><div class="journey-meta"><span class="eyebrow">EXPERIENCE</span><p>Jan 2025 — Present</p><span class="current-label"><span class="status-dot"></span> Current role</span></div><div class="journey-content"><h3>DevOps Engineer</h3><a href="https://websoffers.com" target="_blank" rel="noopener noreferrer">Webs Optimization Software Solution <svg class="icon"><use href="#external"/></svg></a><p class="location">Ahmedabad, India</p><ul><li>Manage production deployments and cloud resources across AWS and GCP.</li><li>Build and automate deployment workflows with Jenkins.</li><li>Administer Linux servers, configurations, and security patches.</li><li>Configure IAM access, server hardening, and SSL for secure environments.</li></ul></div></div>
+      <div class="journey-row"><div class="journey-meta"><span class="eyebrow">EDUCATION</span><p>2021 — 2025</p></div><div class="journey-content"><h3>B.Tech in Information Technology</h3><span class="institution">Ganpat University</span><p>A foundation in systems architecture, networking, cloud systems, and database administration.</p></div></div>
+    </section>
+    <section id="services" class="services-section"><div class="container services-inner"><div><p class="eyebrow">HAVE AN INFRASTRUCTURE CHALLENGE?</p><h2>Let’s make it work better.</h2><p>I also help teams with focused freelance DevOps work.</p><a class="text-link" href="#contact">Discuss your project <svg class="icon"><use href="#arrow"/></svg></a></div><ul><li>AWS cloud setup & migration <svg class="icon"><use href="#cloud"/></svg></li><li>CI/CD pipeline implementation <svg class="icon"><use href="#branch"/></svg></li><li>Server hardening & security <svg class="icon"><use href="#shield"/></svg></li><li>Monitoring & performance optimization <svg class="icon"><use href="#activity"/></svg></li></ul></div></section>
+    <section id="contact" class="section container contact-section"><div class="contact-copy"><p class="eyebrow"><span>05 /</span> LET’S CONNECT</p><h2>Your next release<br>starts with a<br><span>conversation.</span></h2><p>Hiring for a DevOps role, planning a cloud project, or looking for help with deployments? I’d love to hear what you’re working on.</p><a class="email-link" href="mailto:falgunpatel.fv@proton.me">falgunpatel.fv@proton.me <svg class="icon"><use href="#external"/></svg></a><button class="copy-email" type="button"><svg class="icon"><use href="#mail"/></svg><span>Copy email address</span></button><p id="copy-status" class="sr-only" role="status"></p><div class="social-links"><a href="https://www.linkedin.com/in/falgunv/" target="_blank" rel="noopener noreferrer">LinkedIn <svg class="icon"><use href="#external"/></svg></a><a href="https://github.com/lordgaruda" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon"><use href="#external"/></svg></a></div></div>
+      <form id="contact-form" class="contact-form"><h3>Tell me a little about it.</h3><div class="form-row"><div><label for="name">Your name</label><input id="name" name="name" autocomplete="name" placeholder="Alex Morgan" required maxlength="100"></div><div><label for="email">Email address</label><input id="email" type="email" name="email" autocomplete="email" placeholder="alex@company.com" required maxlength="254"></div></div><label for="subject">What can I help with?</label><select id="subject" name="subject"><option>DevOps opportunity</option><option>Cloud infrastructure project</option><option>CI/CD & automation</option><option>Monitoring & optimization</option><option>Something else</option></select><label for="message">Your message</label><textarea id="message" name="message" rows="4" placeholder="A little about your team, project, or infrastructure challenge…" required maxlength="5000"></textarea><button class="button primary" type="submit">Create email draft <svg class="icon"><use href="#external"/></svg></button><p class="form-note">Opens your email app with a draft. You review and send it.</p><p id="form-status" class="form-status" role="status"></p></form>
+    </section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#hero"><span class="brand-mark">f<span>.</span></span><span>falgun<span class="brand-light"> / devops</span></span></a><span>© <span id="year">2026</span> Falgun Vaghashiya</span><a class="back-top" href="#hero">Back to top ↑</a></div></footer>
 </body>
 </html>
